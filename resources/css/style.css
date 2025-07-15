@@ -7,7 +7,6 @@ html {
 
 .main-content {
   position: relative;
-  top: 5.3125rem; /* To offset for fixed header. */
 }
 
 .center {
@@ -37,16 +36,18 @@ html {
 /* Header */
 
 header {
-  position: fixed;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  height: 5.3125rem;
 }
 
 header .content {
   display: flex;
   align-items: center;
-  padding: 1.875rem;
 }
 
 header .logo {
@@ -60,17 +61,21 @@ header .logo {
 
 header nav ul {
   display: flex;
+  margin-right: 1.875rem;
 }
 
 nav li {
+  list-style: none;
   padding-left: 3.5rem;
 }
 
 nav a {
+  text-decoration: none;
   vertical-align: bottom;
   line-height: 1.6;
+  font-family: "Roboto-Regular", sans-serif;
   font-size: 1rem;
-  color: #4a4a4a;
+  color: #4A4A4A;
 }
 
 header .icon {
@@ -118,10 +123,16 @@ header .mobile {
 /* Sign Up Section */
 
 #sign-up-section {
+  margin: 0 auto;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   height: 43.5rem;
+}
+
+.header-image img {
+  width: 100%;
 }
 
 #sign-up-cta {
