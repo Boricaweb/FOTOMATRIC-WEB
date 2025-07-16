@@ -402,13 +402,18 @@ img.header-image {
 
 #quotes-section {
   background-color: #f3f3f3;
+  height: 11.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #quotes-section content {
   padding: 5rem 0;
+  border: solid 2px #ff0000;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -417,7 +422,7 @@ img.header-image {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
