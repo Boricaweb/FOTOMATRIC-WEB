@@ -358,6 +358,14 @@ img.header-image {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#filters-section .images-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 760px) {
