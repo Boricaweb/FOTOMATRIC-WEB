@@ -1,4 +1,12 @@
 /* Universal Styles */
+/*font-face setting*/
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url("resources/Rubik/Rubik-VariableFont_wght.ttf") format("truetype"),
+       url("resources/Rubik/Rubik-VariableFont_wght.woff2") format("woff2"),
+       url("resources/Rubik/Rubik-VariableFont_wght.woff") format("woff");
+}
+/*Initial Layout setting*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -138,7 +146,7 @@ header .mobile {
   margin-bottom: 4rem;
 }
 img.header-image {
-  width: 109%;
+  width: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -149,9 +157,8 @@ img.header-image {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
-  position: relative;
-  left: 10.55rem;
-  top: -1rem;
+  margin-left: 6.25rem;
+  margin-top: -5rem;
   z-index: 900;
 }
 
@@ -165,13 +172,19 @@ img.header-image {
 }
 
 #sign-up-cta h1 {
+  font-family: "Rubik-Regular", sans-serif;
+  font-weight: lighter;
   font-size: 3.125rem;
+  margin-bottom: 0.75rem;
 }
 
 #sign-up-cta h2 {
   font-size: 2.25rem;
-  position: relative;
-  top: 2rem;
+  margin-top: 2rem;
+}
+
+#sign-up-cta span {
+  margin-bottom: 1.625rem;
 }
 
 #sign-up-cta span strong {
@@ -180,6 +193,7 @@ img.header-image {
 
 #sign-up-cta .cursive {
   font-family: "Damion", cursive;
+  font-weight: lighter;
 }
 
 #sign-up-cta .striking {
