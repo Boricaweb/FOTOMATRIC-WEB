@@ -142,8 +142,7 @@ header .mobile {
 #sign-up-section {
   display: flex;
   align-items: center;
-  height: 43.5rem;
-  margin-bottom: 4rem;
+  height: 36.5rem;
 }
 img.header-image {
   width: 100%;
@@ -158,7 +157,7 @@ img.header-image {
   border-radius: 4px;
   background-color: #9dc20b;
   margin-left: 6.25rem;
-  margin-top: -5rem;
+  margin-top: 1rem;
   z-index: 900;
 }
 
@@ -255,23 +254,41 @@ img.header-image {
 /* Features Section */
 
 #features-section {
+  margin: 0;
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 4rem 5% 2.875rem 5%;
   background-color: #f3f3f3;
 }
 
 .feature {
-  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-items: center;
+  height: 35rem;
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
 }
 
+.feature .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+
+.feature .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .feature h2 {
