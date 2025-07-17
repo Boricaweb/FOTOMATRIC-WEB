@@ -236,9 +236,9 @@ img.header-image {
   #sign-up-section {
     display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 21rem;
-    
+    margin-top: 0;
   }
   #sign-up-section .header-image {
     position: absolute;
@@ -250,12 +250,12 @@ img.header-image {
     position: relative;
     text-align: center;
     background-color: transparent;
-    border: solid 2px #ff0101;
+    border: none;
   }
 
-  /*#sign-up-cta .content {
+  #sign-up-cta .content {
     margin-top: 0;
-  }*/
+  }
 
   #sign-up-cta .email {
     display: none;
@@ -350,16 +350,22 @@ img.header-image {
     line-height: 1.4;
   }
 }
-
-@media only screen and (max-width: 760px) {
-  #features-section {
-    flex-flow: column;
-    padding: 0;
-  }
-
+/*Tablet screen*/
+@media only screen and (max-width: 768px) {
   .feature {
-    margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    border: solid 2px #ff0303;
+    padding: 0.8rem;
+  }
+  .feature .center {
+    border: solid 2px #ff0303;
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+  .feature .image-container {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    border: solid 2px #ff0303;
   }
 }
 
