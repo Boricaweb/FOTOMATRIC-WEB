@@ -470,23 +470,19 @@ img.header-image {
 }
 
 @media only screen and (max-width: 768px) {
-  #quotes-section content {
-    border: solid 2px #ff0000;
-    
-    display: grid;
-    grid-template: 1fr / 1fr 1fr;
+  #quotes-section .content {
+    padding-left: 0.75rem;
+    padding-right: 1.75rem;
+    display: flex;
+    justify-content: space-evenly;
   }
   #quotes-section .quote {
-    border: solid 2px #ff0000;
-    font-size: 1.3rem;
     line-height: 1.4;
-    grid-area: 1 / 1 / 2 / 2;
   }
 
   #quotes-section .quote-citation {
-    border: solid 2px #ff0000;
+    margin-top: 0.5rem;
     height: 2.5rem;
-    grid-area: 1 / 2 / 2 / 3;
   }
 }
 
