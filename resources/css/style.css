@@ -45,12 +45,6 @@ html {
   display: block;
 }
 
-/*@media only screen and (max-width: 768px) {
-  .main-content {
-    top: 2.5625rem;
-  }
-}*/
-
 /* Header */
 
 header {
@@ -176,6 +170,7 @@ img.header-image {
   position: absolute;
   top: 0;
   z-index: 100;
+  margin-bottom: 1px;
 }
 /*background color for sign-up*/
 #sign-up-cta {
