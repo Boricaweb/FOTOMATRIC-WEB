@@ -384,6 +384,32 @@ img.header-image {
     font-weight: bold;
   }
 }
+/*Mobile screen*/
+@media only screen and (max-width: 430px) {
+  #features-section {
+    width: 100%;
+    padding: 0;
+    display: block;
+  }
+  .feature {
+    width: 100%;
+    padding: 1.25rem;
+    margin: 0;
+  }
+  .feature .content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .feature h2 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+  }
+  .feature h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+  }
+}
 
 /* Filters Section */
 
@@ -479,7 +505,7 @@ img.header-image {
 #quotes-section .quote-citation {
   height: 1.875rem;
 }
-
+/*Tablet screen*/
 @media only screen and (max-width: 768px) {
   #quotes-section .content {
     padding-left: 0.75rem;
@@ -494,6 +520,22 @@ img.header-image {
   #quotes-section .quote-citation {
     margin-top: 0.5rem;
     height: 2.5rem;
+  }
+}
+/*Mobile screen*/
+@media only screen and (max-width: 430px) {
+  #quotes-section .content {
+    display: block;
+  }
+  #quotes-section .quote {
+    line-height: 1.4;
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  #quotes-section .quote-citation {
+    
+    height: 2rem;
   }
 }
 
@@ -513,8 +555,8 @@ footer .content {
 footer .copyright {
   flex-grow: 1;
 }
-
-@media only screen and (min-width: 768px) {
+/*Tablet screen*/
+@media only screen and (max-width: 768px) {
   footer .content {
     font-size: .625rem;
   }
